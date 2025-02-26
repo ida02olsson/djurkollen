@@ -1,0 +1,101 @@
+body {
+    background-color: white;
+    /*font-family: 'Times new Roman';*/
+    height: 100%;  
+    margin: 0; 
+}
+
+.Navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between; /* Centrerar innehållet horisontellt */
+    align-items: center; /* Centrerar innehållet vertikalt */
+    height: 100px; /* Justera höjden efter behov */
+    background-color: #1B4D3E; /*mörkgrön*/
+    /*background-color: #556B27;*/ /*olivgrön*/
+    padding: 20px;
+}
+
+.Navbar .Logo img {
+    height: 50px; /* Justera storleken på logotypen */
+}
+
+.Logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Perfekt centrerad logga */
+    margin-top: 25px;
+}
+
+.Navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.Textruta {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 70px;
+    margin-right: 40px;
+}
+
+.search-box {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    padding-right: 30px; /* Plats för ikonen */
+}
+
+.search-icon {
+    width: 20px;
+    margin-left: -30px; /* Flyttar in ikonen i input-fältet */
+    cursor: pointer;
+}
+
+.button {
+    background-color: #D8C8A3;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #B39C7D;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #B39C7D;
+}
+
+.container {
+    display: flex;
+}
+
+#continents {
+    background-color: aquamarine;
+    width: 21%;
+}
+
+#animals {
+    background-color: red;
+    width: 79%;
+}
+
+#animals {
+    margin-top: 150px;
+}
+
+.rubrik {
+    width: 800px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    
+}
