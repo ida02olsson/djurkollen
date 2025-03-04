@@ -1,5 +1,8 @@
 body {
-    background-color: white;
+    /*background-color: #F1E6D6;*/
+    /*background-color: white;*/
+    /*background-color: #F5F3E5;*/
+    background-color: #F0F0F0;
     /*font-family: 'Times new Roman';*/
     height: 100%;  
     margin: 0; 
@@ -10,7 +13,7 @@ body {
     position: relative;
     justify-content: space-between; /* Centrerar innehållet horisontellt */
     align-items: center; /* Centrerar innehållet vertikalt */
-    height: 100px; /* Justera höjden efter behov */
+    height: 100px; 
     background-color: #1B4D3E; /*mörkgrön*/
     /*background-color: #556B27;*/ /*olivgrön*/
     padding: 20px;
@@ -36,12 +39,13 @@ body {
     justify-content: center;
 }
 
-.Textruta {
+.search-container {
     display: flex;
     align-items: center;
     margin-left: auto;
     margin-top: 70px;
     margin-right: 40px;
+    position: relative;
 }
 
 .search-box {
@@ -50,8 +54,32 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    padding-right: 30px; /* Plats för ikonen */
+    padding-right: 30px; 
 }
+
+.suggestions {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    right: 0; 
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    width: 250px;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0; /* Lägg till en hover-effekt på förslagen */
+}
+
 
 .search-icon {
     width: 20px;
@@ -60,18 +88,24 @@ body {
 }
 
 .button {
-    background-color: #D8C8A3;
+    /*background-color: #D8C8A3;*/
+    /*background-color: #D7C8B7;*/
+    /*background-color: #333333;*/
+    background-color: #3E6B55;
     width: 300px;
     height: 40px;
-    border: 1px solid #B39C7D;
+    /*border: 1px solid #B39C7D;*/
+    border: 1px solid #1B4D3E;
     display: inline-block;
     transition: background-color 0.3s ease;
     position: relative;
     cursor: pointer;
+    color: white;
 }
 
 .button:hover {
-    background-color: #B39C7D;
+    /*background-color: #B39C7D;*/
+    background-color: #1B4D3E;
 }
 
 .container {
@@ -79,12 +113,12 @@ body {
 }
 
 #continents {
-    background-color: aquamarine;
+    /*background-color: aquamarine;*/
     width: 21%;
 }
 
 #animals {
-    background-color: red;
+    /*background-color: red;*/
     width: 79%;
 }
 
@@ -98,4 +132,36 @@ body {
     display: block;
     margin: 0 auto;
     
+}
+
+.child_animals {
+    text-align: center; /* Centrerar rubrikerna */
+}
+
+.djur-container {
+    justify-content: center; /* Centrerar djurbilderna på raden */
+    gap: 40px; /* Mellanrum mellan bilderna */
+    margin-bottom: 20px; /* Lägger till avstånd mellan djurbilder och nästa rubrik */
+    margin-top: 10px;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 115px); /* Skapar 5 lika stora kolumner */
+}
+
+.djur {
+    width: 120px;
+    height: 120px;
+    object-fit: cover; /* Ser till att bilder behåller proportioner */
+}
+
+.image-container {
+    display: inline-block; /* Gör länken och bilden inline så att de visas på en rad */
+    text-align: center; /* Centrerar texten horisontellt */
+    text-decoration: none;
+}
+
+.text-below {
+    margin-top: 5px; /* Lägger till lite mellanrum mellan bilden och texten */
+    font-size: 16px; /* Justera storleken på texten */
+    color: #000000; /* Justera textfärgen, kan vara vad du vill */
 }

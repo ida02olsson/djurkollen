@@ -4,7 +4,7 @@
 <head>
     <title id="title">Djurkollen</title>
     <link rel="stylesheet" href="startsida.css">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes">-->
+    
 </head>
 
 <body>
@@ -13,61 +13,176 @@
         <ul>
             <div class="Logo">
                 <a href="#">
-                    <img src="logo.png" alt="Logo">
+                    <a href="startsida.html"><img src="logo.png" alt="Logo"></a>
                 </a>
             </div>
-            <div class="Textruta">
-                <input type="text" placeholder="Sök på ett djur..." class="search-box">
-                <img src="Bilder/sok.png" alt="Sökikon" class="search-icon">
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Sök på ett djur..." class="search-box">
+                <img src="Bilder/search.png" alt="Sökikon" class="search-icon">
+                <div id="suggestions" class="suggestions"></div>
             </div>
         </ul>
     </nav>
 
     <div class="container">
-        <div id="continents" class="child">
+        <div id="continents" class="child_continents">
 
-            <button class="button">Afrika</button>
+            <button class="button" onclick="location.href='#afrika'">Afrika</button>
             <br>
-            <button class="button">Antarktis</button>
+            <button class="button" onclick="location.href='#antarktis'">Antarktis</button>
             <br>
-            <button class="button">Arktis</button>
+            <button class="button" onclick="location.href='#arktis'">Arktis</button>
             <br>
-            <button class="button">Europa</button>
+            <button class="button" onclick="location.href='#europa'">Europa</button>
             <br>
-            <button class="button">Nordamerika</button>
+            <button class="button" onclick="location.href='#nordamerika'">Nordamerika</button>
             <br>
-            <button class="button">Oceanien</button>
+            <button class="button" onclick="location.href='#oceanien'">Oceanien</button>
             <br>
-            <button class="button">Sydamerika</button>
+            <button class="button" onclick="location.href='#sydamerika'">Sydamerika</button>
 
 
         </div>
         <div id="animals" class="child">
 
-            <img src="afrika.png" alt="afrika" class="rubrik">
-            <br>
-            <img src="antarktis.png" alt="antarktis" class="rubrik">
-            <br>
-            <img src="arktis.png" alt="arktis" class="rubrik">
-            <br>
-            <img src="europa.png" alt="europa" class="rubrik">
-            <br>
-            <img src="nordamerika.png" alt="nordamerika" class="rubrik">
-            <br>
-            <img src="oceanien.png" alt="oceanien" class="rubrik">
-            <br>
-            <img src="sydamerika.png" alt="sydamerika" class="rubrik">
+            <img id="afrika" src="afrika.png" alt="afrika" class="rubrik">
+            <div class="djur-container">
+                <a href="non_implemented.html" class="image-container">
+                    <img src="Bilder/Afrika/buffel.jpg" alt="buffel" class="djur">
+                    <div class="text-below">Afrikansk buffel</div>
+                </a>
+                <a href="non_implemented.html" class="image-container">
+                    <img src="Bilder/Afrika/flodhäst.jpg" alt="flodhäst" class="djur">
+                    <div class="text-below">Flodhäst</div>
+                </a>
+                <a href="non_implemented.html" class="image-container">
+                    <img src="Bilder/Afrika/giraff.jpg" alt="giraff" class="djur">
+                    <div class="text-below">Giraff</div>
+                </a>
+                <a href="non_implemented.html" class="image-container">
+                    <img src="Bilder/Afrika/hyena.jpg" alt="hyena" class="djur">
+                    <div class="text-below">Hyena</div>
+                </a>
+                <a href="non_implemented.html" class="image-container">
+                    <img src="Bilder/Afrika/jaguar.jpg" alt="jaguar" class="djur">
+                    <div class="text-below">Jaguar</div>
+                </a>
             
+                <a href="non_implemented.html" class="image-container">
+                    <img src="Bilder/Afrika/krokodil.jpg" alt="krokodil" class="djur">
+                    <div class="text-below">Krokodil</div>
+                </a>
+                <a href="lejon.html" class="image-container">
+                    <img src="Bilder/Afrika/lejon.jpg" alt="lejon" class="djur">
+                    <div class="text-below">Lejon</div>
+                </a>
+                <a href="non_implemented.html" class="image-container">
+                    <img src="Bilder/Afrika/noshörning.jpg" alt="noshörning" class="djur">
+                    <div class="text-below">Noshörning</div>
+                </a>
+                <a href="non_implemented.html" class="image-container">
+                    <img src="Bilder/Afrika/elefant.jpg" alt="elefant" class="djur">
+                    <div class="text-below">Elefant</div>
+                </a>
+                <a href="non_implemented.html" class="image-container">
+                    <img src="Bilder/Afrika/zebra.jpg" alt="zebra" class="djur">
+                    <div class="text-below">Zebra</div>
+                </a>
+            </div>
+        
+            <img id="antarktis" src="antarktis.png" alt="antarktis" class="rubrik">
+            <div class="djur-container">
+                <img src="antarktis.png" alt="antarktis" class="djur">
+                <img src="antarktis.png" alt="antarktis" class="djur">
+                <img src="antarktis.png" alt="antarktis" class="djur">
+                <img src="antarktis.png" alt="antarktis" class="djur">
+                <img src="antarktis.png" alt="antarktis" class="djur">
 
+                <img src="antarktis.png" alt="antarktis" class="djur">
+                <img src="antarktis.png" alt="antarktis" class="djur">
+                <img src="antarktis.png" alt="antarktis" class="djur">
+                <img src="antarktis.png" alt="antarktis" class="djur">
+                <img src="antarktis.png" alt="antarktis" class="djur">
+            </div>
+            <img id="arktis" src="arktis.png" alt="arktis" class="rubrik">
+            <div class="djur-container">
+                <img src="arktis.png" alt="arktis" class="djur">
+                <img src="arktis.png" alt="arktis" class="djur">
+                <img src="arktis.png" alt="arktis" class="djur">
+                <img src="arktis.png" alt="arktis" class="djur">
+                <img src="arktis.png" alt="arktis" class="djur">
+
+                <img src="arktis.png" alt="arktis" class="djur">
+                <img src="arktis.png" alt="arktis" class="djur">
+                <img src="arktis.png" alt="arktis" class="djur">
+                <img src="arktis.png" alt="arktis" class="djur">
+                <img src="arktis.png" alt="arktis" class="djur">
+            </div>
+            <img id="europa" src="europa.png" alt="europa" class="rubrik">
+            <div class="djur-container">
+                <img src="europa.png" alt="europa" class="djur">
+                <img src="europa.png" alt="europa" class="djur">
+                <img src="europa.png" alt="europa" class="djur">
+                <img src="europa.png" alt="europa" class="djur">
+                <img src="europa.png" alt="europa" class="djur">
+
+                <img src="europa.png" alt="europa" class="djur">
+                <img src="europa.png" alt="europa" class="djur">
+                <img src="europa.png" alt="europa" class="djur">
+                <img src="europa.png" alt="europa" class="djur">
+                <img src="europa.png" alt="europa" class="djur">
+            </div>
+            <img id="nordamerika" src="nordamerika.png" alt="nordamerika" class="rubrik">
+            <div class="djur-container">
+                <img src="nordamerika.png" alt="nordamerika" class="djur">
+                <img src="nordamerika.png" alt="nordamerika" class="djur">
+                <img src="nordamerika.png" alt="nordamerika" class="djur">
+                <img src="nordamerika.png" alt="nordamerika" class="djur">
+                <img src="nordamerika.png" alt="nordamerika" class="djur">
+
+                <img src="nordamerika.png" alt="nordamerika" class="djur">
+                <img src="nordamerika.png" alt="nordamerika" class="djur">
+                <img src="nordamerika.png" alt="nordamerika" class="djur">
+                <img src="nordamerika.png" alt="nordamerika" class="djur">
+                <img src="nordamerika.png" alt="nordamerika" class="djur">
+            </div>
+            <img id="oceanien" src="oceanien.png" alt="oceanien" class="rubrik">
+            <div class="djur-container">
+                <img src="oceanien.png" alt="oceanien" class="djur">
+                <img src="oceanien.png" alt="oceanien" class="djur">
+                <img src="oceanien.png" alt="oceanien" class="djur">
+                <img src="oceanien.png" alt="oceanien" class="djur">
+                <img src="oceanien.png" alt="oceanien" class="djur">
+
+                <img src="oceanien.png" alt="oceanien" class="djur">
+                <img src="oceanien.png" alt="oceanien" class="djur">
+                <img src="oceanien.png" alt="oceanien" class="djur">
+                <img src="oceanien.png" alt="oceanien" class="djur">
+                <img src="oceanien.png" alt="oceanien" class="djur">
+            </div>
+            <img id="sydamerika" src="sydamerika.png" alt="sydamerika" class="rubrik">
+            <div class="djur-container">
+                <img src="sydamerika.png" alt="sydamerika" class="djur">
+                <img src="sydamerika.png" alt="sydamerika" class="djur">
+                <img src="sydamerika.png" alt="sydamerika" class="djur">
+                <img src="sydamerika.png" alt="sydamerika" class="djur">
+                <img src="sydamerika.png" alt="sydamerika" class="djur">
+
+                <img src="sydamerika.png" alt="sydamerika" class="djur">
+                <img src="sydamerika.png" alt="sydamerika" class="djur">
+                <img src="sydamerika.png" alt="sydamerika" class="djur">
+                <img src="sydamerika.png" alt="sydamerika" class="djur">
+                <img src="sydamerika.png" alt="sydamerika" class="djur">
+            </div>
+        
+        </div>
         </div>
     </div>
     
 
-    <!--<a href="program.html"> <button id="startButton">Start</button></a> -->
-
     </main>
 
-    <!--<script src="openContacts.js"></script>-->
+    <script src="search.js"></script>
 
 </body>
 
