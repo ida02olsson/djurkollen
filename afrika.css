@@ -1,5 +1,6 @@
 body {
-    background-image: url("Bilder/worldmap.jpg");
+    /*background-color: white;*/
+    background-image: url("Bilder/Afrika/savann1.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -13,7 +14,7 @@ body {
     position: relative;
     justify-content: space-between; /* Centrerar innehållet horisontellt */
     align-items: center; /* Centrerar innehållet vertikalt */
-    height: 100px; 
+    height: 100px; /* Justera höjden efter behov */
     background-color: #1B4D3E; /*mörkgrön*/
     /*background-color: #556B27;*/ /*olivgrön*/
     padding: 20px;
@@ -87,53 +88,6 @@ body {
     cursor: pointer;
 }
 
-.button {
-    /*background-color: #D8C8A3;*/
-    /*background-color: #D7C8B7;*/
-    /*background-color: #333333;*/
-    background-color: #3E6B55;
-    width: 300px;
-    height: 40px;
-    /*border: 1px solid #B39C7D;*/
-    border: 1px solid #1B4D3E;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-    position: relative;
-    cursor: pointer;
-    color: white;
-}
-
-.button:hover {
-    /*background-color: #B39C7D;*/
-    background-color: #1B4D3E;
-}
-
-.container {
-    display: flex;
-}
-
-#continents {
-    /*background-color: aquamarine;*/
-    width: 21%;
-}
-
-#animals {
-    /*background-color: red;*/
-    width: 79%;
-}
-
-#animals {
-    margin-top: 150px;
-}
-
-.rubrik {
-    width: 800px;
-    height: 100px;
-    display: block;
-    margin: 0 auto;
-    
-}
-
 .child_animals {
     text-align: center; /* Centrerar rubrikerna */
 }
@@ -144,24 +98,58 @@ body {
     margin-bottom: 20px; /* Lägger till avstånd mellan djurbilder och nästa rubrik */
     margin-top: 10px;
     flex-wrap: wrap;
-    display: grid;
-    grid-template-columns: repeat(5, 115px); /* Skapar 5 lika stora kolumner */
+    display: inline-block;
+    /*grid-template-columns: repeat(5, 115px); *//* Skapar 5 lika stora kolumner */
 }
 
 .djur {
     width: 120px;
     height: 120px;
     object-fit: cover; /* Ser till att bilder behåller proportioner */
+    border-radius: 20px;
+}
+
+.image-container:hover {
+    transform: scale(1.05); /* Förstorar bilden med 20% */
+    z-index: 10; /* Lyfter bilden över andra element */
 }
 
 .image-container {
-    display: inline-block; /* Gör länken och bilden inline så att de visas på en rad */
-    text-align: center; /* Centrerar texten horisontellt */
+    display: flex;
+    flex-direction: column; /* Säkerställer att texten hamnar under bilden */
+    align-items: center;
     text-decoration: none;
+    margin-top: 5px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.child_continents {
+    display: flex;
+    flex-direction: column; /* Staplar djuren vertikalt */
+    align-items: center; /* Centrerar bilderna horisontellt */
+    gap: 10px; /* Mellanrum mellan djuren */
 }
 
 .text-below {
     margin-top: 5px; /* Lägger till lite mellanrum mellan bilden och texten */
-    font-size: 16px; /* Justera storleken på texten */
+    font-size: 18px; /* Justera storleken på texten */
     color: #000000; /* Justera textfärgen, kan vara vad du vill */
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between; /* Placera elementen på höger och vänster sida */
+    align-items: flex-start;
+    width: 100%;
+}
+
+.container {
+    width: 20%; 
+    /*background-color: aqua;*/
+}
+
+.middle-space {
+    width: 60%; 
+    background-color: red;
 }
