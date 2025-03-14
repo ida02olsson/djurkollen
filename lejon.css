@@ -1,6 +1,5 @@
 body {
     background-color: white;
-    /*font-family: 'Times new Roman';*/
     height: 100%;  
     margin: 0; 
 }
@@ -8,22 +7,22 @@ body {
 .Navbar {
     display: flex;
     position: relative;
-    justify-content: space-between; /* Centrerar innehållet horisontellt */
-    align-items: center; /* Centrerar innehållet vertikalt */
-    height: 100px; /* Justera höjden efter behov */
-    background-color: #1B4D3E; /*mörkgrön*/
+    justify-content: space-between; 
+    align-items: center; 
+    height: 100px; 
+    background-color: #1B4D3E; 
     /*background-color: #556B27;*/ /*olivgrön*/
     padding: 20px;
 }
 
 .Navbar .Logo img {
-    height: 50px; /* Justera storleken på logotypen */
+    height: 50px; 
 }
 
 .Logo {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%); /* Perfekt centrerad logga */
+    transform: translateX(-50%); 
     margin-top: 25px;
 }
 
@@ -74,13 +73,13 @@ body {
 }
 
 .suggestion-item:hover {
-    background-color: #f0f0f0; /* Lägg till en hover-effekt på förslagen */
+    background-color: #f0f0f0; 
 }
 
 
 .search-icon {
     width: 20px;
-    margin-left: -30px; /* Flyttar in ikonen i input-fältet */
+    margin-left: -30px; 
     cursor: pointer;
 }
 

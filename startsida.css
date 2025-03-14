@@ -1,32 +1,47 @@
 body {
-    background-image: url("Bilder/worldmap.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    /*font-family: 'Times new Roman';*/
-    height: 100%;  
-    margin: 0; 
+    background-image: url("Bilder/världskarta2.png");
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-position: center; 
+    height: 100%;
+    margin: 0;
+    overflow: hidden; 
+    position: relative; 
+}
+
+#afrika-bild {
+    position: fixed;  
+    top: -33px;
+    left: -60px;
+    width: 108%;
+    height: 108%;
+    z-index: 1; 
+    transition: transform 0.3s ease;
+}
+
+.enlarged {
+    transform: scale(1.1); 
 }
 
 .Navbar {
     display: flex;
     position: relative;
-    justify-content: space-between; /* Centrerar innehållet horisontellt */
-    align-items: center; /* Centrerar innehållet vertikalt */
+    justify-content: space-between; 
+    align-items: center; 
     height: 100px; 
-    background-color: #1B4D3E; /*mörkgrön*/
-    /*background-color: #556B27;*/ /*olivgrön*/
+    background-color: #1B4D3E; 
     padding: 20px;
+    z-index: 2;
 }
 
 .Navbar .Logo img {
-    height: 50px; /* Justera storleken på logotypen */
+    height: 50px; 
 }
 
 .Logo {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%); /* Perfekt centrerad logga */
+    transform: translateX(-50%); 
     margin-top: 25px;
 }
 
@@ -54,6 +69,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    font-family: Helvetica;
     padding-right: 30px; 
 }
 
@@ -77,13 +93,13 @@ body {
 }
 
 .suggestion-item:hover {
-    background-color: #f0f0f0; /* Lägg till en hover-effekt på förslagen */
+    background-color: #f0f0f0; 
 }
 
 
 .search-icon {
     width: 20px;
-    margin-left: -30px; /* Flyttar in ikonen i input-fältet */
+    margin-left: -30px; 
     cursor: pointer;
 }
 
@@ -135,33 +151,33 @@ body {
 }
 
 .child_animals {
-    text-align: center; /* Centrerar rubrikerna */
+    text-align: center; 
 }
 
 .djur-container {
-    justify-content: center; /* Centrerar djurbilderna på raden */
-    gap: 40px; /* Mellanrum mellan bilderna */
-    margin-bottom: 20px; /* Lägger till avstånd mellan djurbilder och nästa rubrik */
+    justify-content: center; 
+    gap: 40px; 
+    margin-bottom: 20px; 
     margin-top: 10px;
     flex-wrap: wrap;
     display: grid;
-    grid-template-columns: repeat(5, 115px); /* Skapar 5 lika stora kolumner */
+    grid-template-columns: repeat(5, 115px); 
 }
 
 .djur {
     width: 120px;
     height: 120px;
-    object-fit: cover; /* Ser till att bilder behåller proportioner */
+    object-fit: cover; 
 }
 
 .image-container {
-    display: inline-block; /* Gör länken och bilden inline så att de visas på en rad */
-    text-align: center; /* Centrerar texten horisontellt */
+    display: inline-block; 
+    text-align: center; 
     text-decoration: none;
 }
 
 .text-below {
-    margin-top: 5px; /* Lägger till lite mellanrum mellan bilden och texten */
-    font-size: 16px; /* Justera storleken på texten */
-    color: #000000; /* Justera textfärgen, kan vara vad du vill */
+    margin-top: 5px; 
+    font-size: 16px; 
+    color: #000000; 
 }
