@@ -1,5 +1,5 @@
 body {
-    background-image: url("Bilder/världskarta2.png");
+    background-image: url("Bilder/världskarta.svg");
     background-size: cover; 
     background-attachment: fixed; 
     background-position: center; 
@@ -9,10 +9,20 @@ body {
     position: relative; 
 }
 
-#afrika-bild {
+/*#afrika-bild { /*png
     position: fixed;  
     top: -33px;
     left: -60px;
+    width: 108%;
+    height: 108%;
+    z-index: 1; 
+    transition: transform 0.3s ease;
+}*/
+
+#afrika-bild { /*svg*/
+    position: fixed;  
+    top: -33px;
+    left: -54px;
     width: 108%;
     height: 108%;
     z-index: 1; 
@@ -29,20 +39,28 @@ body {
     justify-content: space-between; 
     align-items: center; 
     height: 100px; 
-    background-color: #1B4D3E; 
+    /*background-color: #1B4D3E; */
+    /*background-color: #3A5F41;*/
+    background-color: #2F4F3A;
+    /*background-color: #355A3A;*/
     padding: 20px;
     z-index: 2;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
 .Navbar .Logo img {
-    height: 50px; 
+    height: 80px; 
 }
 
-.Logo {
+.Logo img{
     position: absolute;
     left: 50%;
     transform: translateX(-50%); 
-    margin-top: 25px;
+    margin-top: 15px;
+    width: auto;
+    height: 100px;
+    object-fit: contain;
+    display: block;
 }
 
 .Navbar ul {
