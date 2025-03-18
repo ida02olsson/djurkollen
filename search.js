@@ -1,9 +1,7 @@
 const items = [
     { name: "Lejon", url: "lejon.html" },
     { name: "Afrikansk buffel", url: "non_implemented.html" },
-    { name: "Flodhäst 🔒", url: "afrika.html" },
     { name: "Giraff 🔒", url: "afrika.html" },
-    { name: "Hyena 🔒", url: "afrika.html" },
     { name: "Jaguar 🔒", url: "afrika.html" },
     { name: "Krokodil 🔒", url: "afrika.html" },
     { name: "Noshörning 🔒", url: "afrika.html" },

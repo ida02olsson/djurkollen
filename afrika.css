@@ -6,6 +6,7 @@ body {
     font-family: 'Helvetica';
     height: 100%;  
     margin: 0; 
+    position: relative; 
 }
 
 .Navbar {
@@ -110,7 +111,7 @@ body {
     width: 120px;
     height: 120px;
     object-fit: cover; 
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
 }
 
 #lejon-container:hover, #buffel-container:hover {
@@ -126,6 +127,9 @@ body {
     margin-top: 5px;
     position: relative;
     transition: transform 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px 20px 10px 10px;
+    padding-bottom: 3px;
 }
 
 .child_continents {
@@ -137,7 +141,7 @@ body {
 
 .text-below {
     margin-top: 5px; 
-    font-size: 18px; 
+    font-size: 17px; 
     color: #000000; 
 }
 
@@ -155,7 +159,16 @@ body {
 
 .middle-space {
     width: 60%; 
-    background-color: red;
+    display: flex;
+    justify-content: center; 
+    position: relative;
+}
+
+.continent {
+    width: 650px;
+    height: auto;
+    margin-top: 8px;
+    position: fixed;
 }
 
 
@@ -178,4 +191,43 @@ body {
     margin-left: 10px;
     margin-top: 40px;
     margin-right: auto;
+}
+
+.hover-area-lion {
+    position: absolute;
+    top: 55px; /* Justera positionen */
+    left: 245px;
+    width: 107px; /* 638 - 531 */
+    height: 87px; /* 363 - 276 */
+    background: transparent;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#lejon { 
+    /*position: relative;  */
+    transition: transform 0.3s ease;
+}
+
+.enlarged-lion {
+    transform: scale(1.05) translateX(8px) translateY(8px);
+}
+
+.hover-area-buffalo {
+    position: absolute;
+    top: 78px; 
+    left: 420px;
+    width: 107px; 
+    height: 87px; 
+    background: transparent;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#buffel { 
+    transition: transform 0.3s ease;
+}
+
+.enlarged-buffalo {
+    transform: scale(1.05) translateX(-1px) translateY(8px);
 }
