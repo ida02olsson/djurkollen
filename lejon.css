@@ -1,7 +1,10 @@
 body {
-    background-color: white;
+    /*background-color: white;*/
+    /*background-color: #F8F1D3;*/
+    background-color: #EDE1C7;
     height: 100%;  
     margin: 0; 
+    font-family: helvetica;
 }
 
 .Navbar {
@@ -108,4 +111,60 @@ body {
     margin-left: 10px;
     margin-top: 40px;
     margin-right: auto;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    width: 100%;
+    gap: 20px;
+}
+
+.container {
+    flex: 1; 
+    max-width: 50%; 
+    box-sizing: border-box; 
+    padding: 50px; 
+}
+
+.bilder {
+    /*align-items: center;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+figure {
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.locked {
+    color: gray;
+    cursor: default;
+    opacity: 0.6;
+}
+
+#lion_paw {
+    width: 35px;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 18px;
+}
+
+#vapen_lejon {
+    width: 200px;
 }

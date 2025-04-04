@@ -1,12 +1,12 @@
 const items = [
     { name: "Lejon", url: "lejon.html" },
     { name: "Afrikansk buffel", url: "non_implemented.html" },
-    { name: "Giraff 🔒", url: "afrika.html" },
-    { name: "Jaguar 🔒", url: "afrika.html" },
-    { name: "Krokodil 🔒", url: "afrika.html" },
-    { name: "Noshörning 🔒", url: "afrika.html" },
-    { name: "Elefant 🔒", url: "afrika.html" },
-    { name: "Zebra 🔒", url: "afrika.html"},
+    { name: "Giraff", url: "afrika.html" },
+    { name: "Jaguar", url: "afrika.html" },
+    { name: "Krokodil", url: "afrika.html" },
+    { name: "Noshörning", url: "afrika.html" },
+    { name: "Elefant", url: "afrika.html" },
+    { name: "Zebra", url: "afrika.html"},
     { name: "Kronhjort 🔒", url: "#"},
     { name: "Brunbjörn 🔒", url: "#"},
     { name: "Varg 🔒", url: "#"},
@@ -63,13 +63,32 @@ searchInput.addEventListener("input", function() {
     if (query) {
         const filteredItems = items.filter(item => item.name.toLowerCase().includes(query));
 
-        filteredItems.forEach(item => {
+        /*filteredItems.forEach(item => {
             const div = document.createElement("div");
             div.classList.add("suggestion-item");
             div.textContent = item.name;
             div.addEventListener("click", () => {
                 window.location.href = item.url;
             });
+            suggestionsContainer.appendChild(div);
+        });*/
+
+        filteredItems.forEach(item => {
+            const div = document.createElement("div");
+            div.classList.add("suggestion-item");
+        
+            const isLocked = item.name.includes("🔒");
+            const displayName = item.name.replace(" 🔒", ""); 
+            div.textContent = displayName;
+        
+            if (isLocked) {
+                div.classList.add("locked");
+            } else {
+                div.addEventListener("click", () => {
+                    window.location.href = item.url;
+                });
+            }
+        
             suggestionsContainer.appendChild(div);
         });
 

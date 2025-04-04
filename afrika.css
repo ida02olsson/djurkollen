@@ -231,3 +231,9 @@ body {
 .enlarged-buffalo {
     transform: scale(1.05) translateX(-1px) translateY(8px);
 }
+
+.locked {
+    color: gray;
+    cursor: default;
+    opacity: 0.6;
+}

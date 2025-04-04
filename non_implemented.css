@@ -115,3 +115,9 @@ body {
     margin-top: 40px;
     margin-right: auto;
 }
+
+.locked {
+    color: gray;
+    cursor: default;
+    opacity: 0.6;
+}

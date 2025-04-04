@@ -1,8 +1,9 @@
 body {
-    background-image: url("Bilder/världskarta.svg");
+    background-image: url("Bilder/Start/världskarta_helfärg.svg");
     background-size: cover; 
     background-attachment: fixed; 
     background-position: center; 
+    font-family: 'Helvetica';
     height: 100%;
     margin: 0;
     overflow: hidden; 
@@ -31,6 +32,46 @@ body {
 
 .enlarged {
     transform: scale(1.1); 
+}
+
+#lian1 { /*svg*/
+    position: fixed;  
+    top: -30px;
+    left: -90px;
+    width: 108%;
+    height: 108%;
+    z-index: 1; 
+    transition: transform 0.3s ease;
+}
+
+#lian2 { /*svg*/
+    position: fixed;  
+    top: -30px;
+    left: -90px;
+    width: 108%;
+    height: 108%;
+    z-index: 1; 
+    transition: transform 0.3s ease;
+}
+
+#lian3 { /*svg*/
+    position: fixed;  
+    top: -30px;
+    left: -40px;
+    width: 108%;
+    height: 108%;
+    z-index: 1; 
+    transition: transform 0.3s ease;
+}
+
+#lian4 { /*svg*/
+    position: fixed;  
+    top: -30px;
+    left: -20px;
+    width: 108%;
+    height: 108%;
+    z-index: 1; 
+    transition: transform 0.3s ease;
 }
 
 .Navbar {
@@ -121,3 +162,8 @@ body {
     cursor: pointer;
 }
 
+.locked {
+    color: gray;
+    cursor: default;
+    opacity: 0.6;
+}
