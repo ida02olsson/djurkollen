@@ -126,14 +126,107 @@
 
     </div>
 
-    <div>
+    
+
+    <div class="container-quiz">
         <!--lägg in quiz-->
+        <h1>Quiz</h1>
+
+        <fieldset>
+            <h2 class="question">Vad äter lejon främst?</h2>
+            <legend>Fråga 1:</legend>
+            <input class="answer" type="radio" name="eat" id="fruit" value="fruit" /><label for="track">Frukt och bär</label>
+            <br />
+            <input class="answer" type="radio" name="eat" id="meat" value="meat" /><label for="track">Stora djur som zebror och antiloper</label>
+            <br />
+            <input class="answer" type="radio" name="eat" id="grass" value="grass" /><label for="track">Gräs och löv</label>
+            <br />
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <h2 class="question">Var lever de flesta vilda lejon idag?</h2>
+            <legend>Fråga 2:</legend>
+            <input class="answer" type="radio" name="live" id="europa" value="europa" /><label for="europa">I Europa</label>
+            <br />
+            <input class="answer" type="radio" name="live" id="nordamerika" value="nordamerika" /><label for="nordamerika">I Nordamerika</label>
+            <br />
+            <input class="answer" type="radio" name="live" id="sahara" value="sahara" /><label for="sahara">I Afrika söder om Sahara</label>
+            <br />
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <h2 class="question">Vad är en lejonhanes viktigaste uppgift i flocken?</h2>
+            <legend>Fråga 3:</legend>
+            <input class="answer" type="radio" name="task" id="försvara" value="försvara" /><label for="försvara">Försvara flocken mot fiender</label>
+            <br />
+            <input class="answer" type="radio" name="task" id="jaga" value="jaga" /><label for="jaga">Jaga mest mat åt flocken</label>
+            <br />
+            <input class="answer" type="radio" name="task" id="bo" value="bo" /><label for="bo">Bygga bo åt ungarna</label>
+            <br />
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <h2 class="question">Hur känner man igen en lejonhane?</h2>
+            <legend>Fråga 4:</legend>
+            <input class="answer" type="radio" name="know" id="svans" value="svans" /><label for="svans">På hans långa svans</label>
+            <br />
+            <input class="answer" type="radio" name="know" id="man" value="man" /><label for="man">På hans stora man</label>
+            <br />
+            <input class="answer" type="radio" name="know" id="päls" value="päls" /><label for="päls">På hans fläckiga päls</label>
+            <br />
+        </fieldset>
+
+        <br>
+        <br>
+
+        <button id="svara" onclick="answer_question()">Svara</button>
+        
     </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
 
     </main>
 
     <script src="search.js"></script>
+    <script src="answer_question.js"></script>
 
+    <!-- Ja/Nej popup -->
+    <div id="popup-confirm" style="display: none;">
+        <div class="popup-inner">
+        <p id="popup-confirm-text">Är du säker på att du vill svara?</p>
+        <button id="confirm-yes" onclick="handlePopupAnswer(true)">Ja</button>
+        <button id="confirm-no" onclick="handlePopupAnswer(false)">Nej</button>
+        </div>
+    </div>
+    
+    <!-- Info popup -->
+    <div id="popup-alert" style="display: none;">
+        <div class="popup-inner">
+        <p id="popup-alert-text">Meddelande här...</p>
+        <button id="ok" onclick="closeAlertPopup()">OK</button>
+        </div>
+    </div>
+    
+    <!-- Klarat popup -->
+    <div id="popup-done" style="display: none;">
+        <div class="popup-inner">
+            <p id="popup-done-text">Grattis, du klarade quizet! Du har nu öppnat ett nytt djur.</p>
+            <button id="go-buffalo" onclick="handlePopupDoneAnswer('nästa')">Gå till nästa djur</button>
+            <button id="go-africa" onclick="handlePopupDoneAnswer('afrika')">Gå till Afrika</button>
+            <button id="stay-lion" onclick="handlePopupDoneAnswer('stanna')">Stanna på lejon</button>
+        </div>
+    </div>
+  
+    
 </body>
 
 </html>

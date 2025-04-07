@@ -2,6 +2,7 @@ body {
     /*background-color: white;*/
     /*background-color: #F8F1D3;*/
     background-color: #EDE1C7;
+    
     height: 100%;  
     margin: 0; 
     font-family: helvetica;
@@ -167,4 +168,104 @@ p {
 
 #vapen_lejon {
     width: 200px;
+}
+
+.container-quiz{
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+fieldset {
+    background-color: #F5EBD7;
+}
+
+#svara {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #2F4F3A;
+    border-color: black;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-left: 0 3px;
+    float: right;
+}
+
+#svara:hover {
+    background-color: #406d50;
+    background-color: #1c2e22;
+}
+
+.question {
+    font-size: 25px;
+}
+
+.answer {
+    font-size: 18px;
+}
+
+
+
+
+#popup-confirm,
+#popup-alert,
+#popup-done {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.popup-inner {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 20px;
+    max-width: 400px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.popup-inner button {
+    margin: 15px;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+#confirm-yes {
+    background-color: #2F4F3A;
+    color: white;
+}
+
+#confirm-no {
+    background-color: #8B1A1A;
+    color: rgb(255, 255, 255);
+}
+
+#ok {
+    background-color: #EDE1C7;
+    color: rgb(0, 0, 0);
+}
+
+#go-africa {
+    background-color: #EDE1C7;
+    color: rgb(0, 0, 0);
+}
+
+#stay-lion {
+    background-color: #EDE1C7;
+    color: rgb(0, 0, 0);
+}
+
+#go-buffalo {
+    background-color: #EDE1C7;
+    color: rgb(0, 0, 0);
 }
