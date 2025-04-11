@@ -200,10 +200,25 @@ fieldset {
 
 .question {
     font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 30px;
 }
 
 .answer {
+    margin-bottom: 20px;
+    transform: scale(1.5);
+    top: -3px;
+    position: relative
+}
+
+legend {
     font-size: 18px;
+}
+
+.svar {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
 }
 
 

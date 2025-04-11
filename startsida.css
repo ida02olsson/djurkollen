@@ -167,3 +167,56 @@ body {
     cursor: default;
     opacity: 0.6;
 }
+
+
+@keyframes swing1 {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(3deg); }
+    50% { transform: rotate(-3deg); }
+    75% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.swing1 {
+    animation: swing1 2s infinite ease-in-out;
+    transform-origin: top left; 
+}
+
+@keyframes swing2 {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(-3deg); }
+    50%  { transform: rotate(3deg); }
+    75%  { transform: rotate(-3deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.swing2 {
+    animation: swing2 2s infinite ease-in-out;
+    transform-origin: top left; 
+}
+
+@keyframes swing3 {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(2deg); }
+    50%  { transform: rotate(-2.5deg); }
+    75%  { transform: rotate(2deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.swing3 {
+    animation: swing3 2s infinite ease-in-out;
+    transform-origin: top right; 
+}
+
+@keyframes swing4 {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(-3deg); }
+    50%  { transform: rotate(3deg); }
+    75%  { transform: rotate(-3deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.swing4 {
+    animation: swing4 2s infinite ease-in-out;
+    transform-origin: top right; 
+}

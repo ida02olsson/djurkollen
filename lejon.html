@@ -135,11 +135,11 @@
         <fieldset>
             <h2 class="question">Vad äter lejon främst?</h2>
             <legend>Fråga 1:</legend>
-            <input class="answer" type="radio" name="eat" id="fruit" value="fruit" /><label for="track">Frukt och bär</label>
+            <input class="answer" type="radio" name="eat" id="fruit" value="fruit" /><label class="svar" for="track">Frukt och bär</label>
             <br />
-            <input class="answer" type="radio" name="eat" id="meat" value="meat" /><label for="track">Stora djur som zebror och antiloper</label>
+            <input class="answer" type="radio" name="eat" id="meat" value="meat" /><label class="svar" for="track">Stora djur som zebror och antiloper</label>
             <br />
-            <input class="answer" type="radio" name="eat" id="grass" value="grass" /><label for="track">Gräs och löv</label>
+            <input class="answer" type="radio" name="eat" id="grass" value="grass" /><label class="svar" for="track">Gräs och löv</label>
             <br />
         </fieldset>
 
@@ -148,11 +148,11 @@
         <fieldset>
             <h2 class="question">Var lever de flesta vilda lejon idag?</h2>
             <legend>Fråga 2:</legend>
-            <input class="answer" type="radio" name="live" id="europa" value="europa" /><label for="europa">I Europa</label>
+            <input class="answer" type="radio" name="live" id="europa" value="europa" /><label class="svar" for="europa">I Europa</label>
             <br />
-            <input class="answer" type="radio" name="live" id="nordamerika" value="nordamerika" /><label for="nordamerika">I Nordamerika</label>
+            <input class="answer" type="radio" name="live" id="nordamerika" value="nordamerika" /><label class="svar" for="nordamerika">I Nordamerika</label>
             <br />
-            <input class="answer" type="radio" name="live" id="sahara" value="sahara" /><label for="sahara">I Afrika söder om Sahara</label>
+            <input class="answer" type="radio" name="live" id="sahara" value="sahara" /><label class="svar" for="sahara">I Afrika söder om Sahara</label>
             <br />
         </fieldset>
 
@@ -161,11 +161,11 @@
         <fieldset>
             <h2 class="question">Vad är en lejonhanes viktigaste uppgift i flocken?</h2>
             <legend>Fråga 3:</legend>
-            <input class="answer" type="radio" name="task" id="försvara" value="försvara" /><label for="försvara">Försvara flocken mot fiender</label>
+            <input class="answer" type="radio" name="task" id="försvara" value="försvara" /><label class="svar" for="försvara">Försvara flocken mot fiender</label>
             <br />
-            <input class="answer" type="radio" name="task" id="jaga" value="jaga" /><label for="jaga">Jaga mest mat åt flocken</label>
+            <input class="answer" type="radio" name="task" id="jaga" value="jaga" /><label class="svar" for="jaga">Jaga mest mat åt flocken</label>
             <br />
-            <input class="answer" type="radio" name="task" id="bo" value="bo" /><label for="bo">Bygga bo åt ungarna</label>
+            <input class="answer" type="radio" name="task" id="bo" value="bo" /><label class="svar" for="bo">Bygga bo åt ungarna</label>
             <br />
         </fieldset>
 
@@ -174,11 +174,11 @@
         <fieldset>
             <h2 class="question">Hur känner man igen en lejonhane?</h2>
             <legend>Fråga 4:</legend>
-            <input class="answer" type="radio" name="know" id="svans" value="svans" /><label for="svans">På hans långa svans</label>
+            <input class="answer" type="radio" name="know" id="svans" value="svans" /><label class="svar" for="svans">På hans långa svans</label>
             <br />
-            <input class="answer" type="radio" name="know" id="man" value="man" /><label for="man">På hans stora man</label>
+            <input class="answer" type="radio" name="know" id="man" value="man" /><label class="svar" for="man">På hans stora man</label>
             <br />
-            <input class="answer" type="radio" name="know" id="päls" value="päls" /><label for="päls">På hans fläckiga päls</label>
+            <input class="answer" type="radio" name="know" id="päls" value="päls" /><label class="svar" for="päls">På hans fläckiga päls</label>
             <br />
         </fieldset>
 
@@ -220,9 +220,9 @@
     <div id="popup-done" style="display: none;">
         <div class="popup-inner">
             <p id="popup-done-text">Grattis, du klarade quizet! Du har nu öppnat ett nytt djur.</p>
-            <button id="go-buffalo" onclick="handlePopupDoneAnswer('nästa')">Gå till nästa djur</button>
-            <button id="go-africa" onclick="handlePopupDoneAnswer('afrika')">Gå till Afrika</button>
-            <button id="stay-lion" onclick="handlePopupDoneAnswer('stanna')">Stanna på lejon</button>
+            <button id="go-buffalo" onclick="handlePopupDoneAnswer('nästa')">Gå till nästa djur!</button>
+            <button id="go-africa" onclick="handlePopupDoneAnswer('afrika')">Gå till Afrika!</button>
+            <button id="stay-lion" onclick="handlePopupDoneAnswer('stanna')">Stanna på lejon!</button>
         </div>
     </div>
   
