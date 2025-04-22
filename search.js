@@ -2,7 +2,7 @@ const items = [
     { name: "Afrika: Lejon", url: "lejon.html" },
     { name: "Afrika: Afrikansk buffel", url: "non_implemented.html" },
     { name: "Afrika: Giraff", url: "afrika.html" },
-    { name: "Afrika: Jaguar", url: "afrika.html" }, // (Obs! Egentligen från Sydamerika)
+    { name: "Afrika: Leopard", url: "afrika.html" }, 
     { name: "Afrika: Krokodil", url: "afrika.html" },
     { name: "Afrika: Noshörning", url: "afrika.html" },
     { name: "Afrika: Elefant", url: "afrika.html" },
