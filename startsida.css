@@ -1,5 +1,5 @@
 body {
-    background-image: url("Bilder/Start/världskarta_helfärg.svg");
+    background-image: url("Bilder/Start/världskarta_helfärg_baloo.svg");
     background-size: cover; 
     background-attachment: fixed; 
     background-position: center; 
@@ -8,6 +8,7 @@ body {
     margin: 0;
     overflow: hidden; 
     position: relative; 
+    
 }
 
 /*#afrika-bild { /*png
