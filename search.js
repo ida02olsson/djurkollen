@@ -70,16 +70,6 @@ searchInput.addEventListener("input", function() {
     if (query) {
         const filteredItems = items.filter(item => item.name.toLowerCase().includes(query));
 
-        /*filteredItems.forEach(item => {
-            const div = document.createElement("div");
-            div.classList.add("suggestion-item");
-            div.textContent = item.name;
-            div.addEventListener("click", () => {
-                window.location.href = item.url;
-            });
-            suggestionsContainer.appendChild(div);
-        });*/
-
         filteredItems.forEach(item => {
             const div = document.createElement("div");
             div.classList.add("suggestion-item");

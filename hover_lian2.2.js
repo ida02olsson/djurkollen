@@ -23,7 +23,7 @@ document.addEventListener('mousemove', function(e) {
 
     if (isInside && !insideArea2_2) {
         insideArea2_2 = true;
-        lian2.classList.add('swing2');
+        lian2_2.classList.add('swing2');
     }
 
     if (!isInside && insideArea2_2) {
@@ -32,9 +32,9 @@ document.addEventListener('mousemove', function(e) {
     }
 });
 
-lian2.addEventListener('animationiteration', () => {
+lian2_2.addEventListener('animationiteration', () => {
     if (shouldStop2_2) {
-        lian2.classList.remove('swing2');
+        lian2_2.classList.remove('swing2');
         shouldStop2_2 = false;
     }
 });
