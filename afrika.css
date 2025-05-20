@@ -207,7 +207,6 @@ body {
 }
 
 #lejon { 
-    /*position: relative;  */
     transition: transform 0.7s ease;
 }
 

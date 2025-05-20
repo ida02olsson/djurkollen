@@ -1,5 +1,5 @@
 function answer_question() {
-    showConfirmPopup("Är du säker på att du vill svara?");
+    showConfirmPopup("Är du redo att skicka in dina svar?");
   }
   
   function showConfirmPopup(message) {
@@ -23,7 +23,7 @@ function answer_question() {
       }
   
       if (!allAnswered) {
-        showAlertPopup("Du har inte svarat på alla frågor!");
+        showAlertPopup("Ops! Du har några frågor kvar att svara på, gå tillbaka och testa dem också!");
         return;
       }
   
@@ -46,13 +46,13 @@ function answer_question() {
       if (wrongCount === 0) {
         answer_done_question(); 
       } else {
-        showAlertPopup("Du har tyvärr " + wrongCount + "/4 fel");
+        showAlertPopup("Oj, du hade " + wrongCount + " av 4 fel men det är okej, prova gärna igen och bli en djurexpert!");
       }
     }
   }
   
   function answer_done_question() {
-    showDonePopup("Grattis, du klarade quizet! Du har nu öppnat ett nytt djur.");
+    showDonePopup("Wow, grattis! Du klarade quizet och har låst upp ett nytt spännande djur! ");
   }
   
   function showDonePopup(message) {

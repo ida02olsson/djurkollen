@@ -1,5 +1,5 @@
 body {
-    background-image: url("Bilder/Start/världskarta_helfärg_baloo.svg");
+    background-image: url("Bilder/Start/världskarta_helfärg_ny_färg.svg");
     background-size: cover; 
     background-attachment: fixed; 
     background-position: center; 
@@ -35,7 +35,7 @@ body {
     transform: scale(1.1); 
 }
 
-#lian1 { /*svg*/
+#lian1 { 
     position: fixed;  
     top: -30px;
     left: -90px;
@@ -45,7 +45,7 @@ body {
     transition: transform 0.3s ease;
 }
 
-#lian2 { /*svg*/
+#lian2 { 
     position: fixed;  
     top: -30px;
     left: -90px;
@@ -55,7 +55,7 @@ body {
     transition: transform 0.3s ease;
 }
 
-#lian3 { /*svg*/
+#lian3 { 
     position: fixed;  
     top: -30px;
     left: -40px;
@@ -65,7 +65,7 @@ body {
     transition: transform 0.3s ease;
 }
 
-#lian4 { /*svg*/
+#lian4 { 
     position: fixed;  
     top: -30px;
     left: -20px;
@@ -169,6 +169,18 @@ body {
     opacity: 0.6;
 }
 
+.Level {
+    position: absolute;
+    left: -140px;
+    top: 50%;
+    transform: translateY(-37%);
+    z-index: 3;
+}
+
+.Level img {
+    height: 230px;
+    object-fit: contain;
+}
 
 @keyframes swing1 {
     0% { transform: rotate(0deg); }

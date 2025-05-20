@@ -1,4 +1,13 @@
 const items = [
+    { name: "Antarktis 🔒", url: "#" },
+    { name: "Sydamerika 🔒", url: "#" },
+    { name: "Nordamerika 🔒", url: "#" },
+    { name: "Australien 🔒", url: "#" },
+    { name: "Arktis 🔒", url: "#" },
+    { name: "Asien 🔒", url: "#" },
+    { name: "Europa 🔒", url: "#" },
+    { name: "Afrika", url: "afrika.html" },
+
     { name: "Afrika: Lejon", url: "lejon.html" },
     { name: "Afrika: Afrikansk buffel", url: "non_implemented.html" },
     { name: "Afrika: Giraff", url: "afrika.html" },
@@ -58,6 +67,7 @@ const items = [
     { name: "Antarktis: Albratross 🔒", url: "#" },
     { name: "Antarktis: Blåval 🔒", url: "#" },
     { name: "Antarktis: Adeliepingvin 🔒", url: "#" }
+
 ];
 
 const searchInput = document.getElementById("search");

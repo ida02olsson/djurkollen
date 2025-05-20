@@ -18,19 +18,25 @@
             </div>
             <div class="Logo">
                 <a href="startsida.html">
-                    <img src="Bilder/logo5.svg" alt="Logo">
+                    <img src="Bilder/logo_nya_färger.svg">
                 </a>
             </div>
             <div class="search-container">
                 <input type="text" id="search" placeholder="Sök på ett djur..." class="search-box">
-                <img src="Bilder/search.png" alt="Sökikon" class="search-icon">
+                <img src="Bilder/search.png" class="search-icon">
                 <div id="suggestions" class="suggestions"></div>
             </div>
         </ul>
     </nav>
 
     <div class="main-container">
-        <div class="container">
+        <hr class="section-divider1">
+        <hr class="section-divider2">
+        <hr class="section-divider3">
+        <hr class="section-divider4">
+        
+
+        <div class="container_left">
 
             <h1>Lej<img src="Bilder/Lejon/lejon_tass.svg" id="lion_paw">n - Savannens konung</h1>
             <p>Lejonet är ett av de mäktigaste rovdjuren på jorden och kallas ofta för "djungelns konung" trots att 
@@ -44,12 +50,18 @@
             <br>
             <br>
             <br>
+            <br>
+            <br>
+            
+            
+        
 
             <figure>
                 <img src="Bilder/Lejon/lion_map.svg" class="bilder">
-                <figcaption>Kartan visar områdena där lejonen befinner sig idag.</figcaption>
+                <figcaption id="text_karta">Kartan visar områdena där lejonen befinner sig idag.</figcaption>
             </figure>
 
+            <br>
             <br>
             <br>
 
@@ -66,25 +78,28 @@
             <br>
             <br>
             <br>
+            
 
             <figure>
                 <img src="Bilder/Lejon/vapen_lejon.png" class="bilder" id="vapen_lejon">
-                <figcaption>Pfäffikons vapen är en gammal symbol från kommunen Pfäffikon i Schweiz. Det första gången 
-                    dokumenterades 1535 och lejonet i vapnet kan ha inspirerats av lejonet i Habsburg-Österrikes vapen, 
-                    eftersom Pfäffikon en gång hade kopplingar till Habsburg.</figcaption>
+                <figcaption id="text_vapensköld">Pfäffikons vapen är en gammal symbol från kommunen Pfäffikon i Schweiz. Det första 
+                    gången dokumenterades 1535 och lejonet i vapnet kan ha inspirerats av lejonet i Habsburg-Österrikes vapen, eftersom 
+                    Pfäffikon en gång hade kopplingar till Habsburg.</figcaption>
             </figure>
 
 
 
         </div>
 
-        <div class="container">
+        <div class="container_right">
 
+            <br>
             <figure>
                 <img src="Bilder/Lejon/lion_family.jpg" class="bilder">
-                <figcaption>Lejonhonan och lejonhanen går tillsammans i savannen.</figcaption>
+                <figcaption id="text_familj">Lejonhonan och lejonhanen går tillsammans i savannen.</figcaption>
             </figure>
 
+            <br>
             <br>
             <br>
 
@@ -104,12 +119,15 @@
             <br>
             <br>
             <br>
+            
+            
 
             <figure>
                 <img src="Bilder/Lejon/zebra_antilop.jpg" class="bilder">
-                <figcaption>Zebror och antiloper – lejonens naturliga byten.</figcaption>
+                <figcaption id="text_mat">Zebror och antiloper – lejonens naturliga byten.</figcaption>
             </figure>
 
+            <br>
             <br>
             <br>
 
@@ -125,11 +143,13 @@
 
 
     </div>
+    <br>
+    <br>
 
     
 
     <div class="container-quiz">
-        <!--lägg in quiz-->
+        
         <h1>Quiz</h1>
 
         <fieldset>
@@ -199,29 +219,26 @@
     <script src="search.js"></script>
     <script src="answer_question.js"></script>
 
-    <!-- Ja/Nej popup -->
     <div id="popup-confirm" style="display: none;">
         <div class="popup-inner">
-        <p id="popup-confirm-text">Är du säker på att du vill svara?</p>
+        <h4 id="popup-confirm-text">Är du redo att skicka in dina svar?</h4>
         <button id="confirm-yes" onclick="handlePopupAnswer(true)">Ja</button>
         <button id="confirm-no" onclick="handlePopupAnswer(false)">Nej</button>
         </div>
     </div>
     
-    <!-- Info popup -->
     <div id="popup-alert" style="display: none;">
         <div class="popup-inner">
-        <p id="popup-alert-text">Meddelande här...</p>
+        <h4 id="popup-alert-text">Meddelande här...</h4>
         <button id="ok" onclick="closeAlertPopup()">OK</button>
         </div>
     </div>
     
-    <!-- Klarat popup -->
     <div id="popup-done" style="display: none;">
         <div class="popup-inner">
-            <p id="popup-done-text">Grattis, du klarade quizet! Du har nu öppnat ett nytt djur.</p>
+            <h4 id="popup-done-text">Wow, grattis! Du klarade quizet och har låst upp ett nytt spännande djur!</h4>
             <button id="go-buffalo" onclick="handlePopupDoneAnswer('nästa')">Gå till nästa djur!</button>
-            <button id="go-africa" onclick="handlePopupDoneAnswer('afrika')">Gå till Afrika!</button>
+            <button id="go-africa" onclick="handlePopupDoneAnswer('afrika')">Gå tillbaka till Afrika!</button>
             <button id="stay-lion" onclick="handlePopupDoneAnswer('stanna')">Stanna på lejon!</button>
         </div>
     </div>
