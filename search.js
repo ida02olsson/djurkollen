@@ -2,7 +2,7 @@ const items = [
     { name: "Antarktis 🔒", url: "#" },
     { name: "Sydamerika 🔒", url: "#" },
     { name: "Nordamerika 🔒", url: "#" },
-    { name: "Australien 🔒", url: "#" },
+    { name: "Oceanien 🔒", url: "#" },
     { name: "Arktis 🔒", url: "#" },
     { name: "Asien 🔒", url: "#" },
     { name: "Europa 🔒", url: "#" },
@@ -41,10 +41,10 @@ const items = [
     { name: "Arktis: Snöuggla 🔒", url: "#" },
     { name: "Arktis: Ren 🔒", url: "#" },
 
-    { name: "Australien: Känguru 🔒", url: "#" },
-    { name: "Australien: Koala 🔒", url: "#" },
-    { name: "Australien: Emu 🔒", url: "#" },
-    { name: "Australien: Dingo 🔒", url: "#" },
+    { name: "Oceanien: Känguru 🔒", url: "#" },
+    { name: "Oceanien: Koala 🔒", url: "#" },
+    { name: "Oceanien: Emu 🔒", url: "#" },
+    { name: "Oceanien: Dingo 🔒", url: "#" },
 
     { name: "Nordamerika: Grizzlybjörn 🔒", url: "#" },
     { name: "Nordamerika: Puma 🔒", url: "#" },
