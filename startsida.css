@@ -11,17 +11,7 @@ body {
     
 }
 
-/*#afrika-bild { /*png
-    position: fixed;  
-    top: -33px;
-    left: -60px;
-    width: 108%;
-    height: 108%;
-    z-index: 1; 
-    transition: transform 0.3s ease;
-}*/
-
-#afrika-bild { /*svg*/
+#afrika-bild { 
     position: fixed;  
     top: -33px;
     left: -54px;
