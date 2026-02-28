@@ -64,7 +64,7 @@ function answer_question() {
     document.getElementById("popup-done").style.display = "none";
   
     if (choice === "afrika") {
-      window.location.href = "afrika.html";
+      window.location.href = "africa.html";
     } else if (choice === "nästa") {
       window.location.href = "non_implemented.html"; 
     } else if (choice === "stanna") {
